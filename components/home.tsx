@@ -23,9 +23,9 @@ const Home = () => {
         >
           Mahendra Adi Rahmawan
         </motion.h1>
-        <h2 className="text-white text-xl md:text-xl">
+        <motion.h2 className="text-white text-xl md:text-xl">
           Software Engineer, Mobile Apps, Web Development
-        </h2>
+        </motion.h2>
       </div>
 
       <motion.div
