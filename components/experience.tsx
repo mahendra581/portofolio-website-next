@@ -1,10 +1,16 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import SectionHeading from "@/components/ui/sectionHeading";
 import { Chrono } from "react-chrono";
 
 const Experience = () => {
-
+  //   if (typeof window !== "undefined") {
+  //     const height = window.innerHeight;
+  //   }
+  const height = window.innerHeight;
+  //   useEffect(() => {
+  //     const height = window.innerHeight;
+  //   }, []);
 
   return (
     <section id="experience" className="mb-10 sm:mb-15">
@@ -14,14 +20,13 @@ const Experience = () => {
           {
             title: "2020 - 2024",
             cardTitle: "Telkom University",
-            url: "http://cpsrg.org",
-            cardSubtitle: "Telecommunication Engineering, Faculty of Electrical Engineering",
-            cardDetailedText: `GPA: 3.59/4.00\n Final Project: Research sentiment analysis for autism children with machine learning NLP, GCP, Mobile App.\n Interest field: Software Development, Mobile Application, Telecommunication Engineering (Server), Internet of Things.`,            
-        },
+            cardSubtitle:
+              "Telecommunication Engineering, Faculty of Electrical Engineering",
+            cardDetailedText: `GPA: 3.59/4.00\n Final Project: Research sentiment analysis for autism children with machine learning NLP, GCP, Mobile App.\n Interest field: Software Development, Mobile Application, Telecommunication Engineering (Server), Internet of Things.`,
+          },
           {
             title: "Jun 2023 - Jun 2024",
             cardTitle: "Cyber Physical System Laboratory",
-            url: "http://cpsrg.org",
             cardSubtitle: "Coordinator Assistant",
             cardDetailedText: `Supervised 2 departments (Practicum and Research Departments) with approximately 45 members and implemented
             project management Agile for laboratory roadmap.\n 
@@ -47,6 +52,18 @@ const Experience = () => {
           },
         ]}
         mode="VERTICAL_ALTERNATING"
+        scrollable={{ scrollbar: true }}
+        theme={{
+          titleColor: "white",
+          primary: "#29303D",
+          secondary: "#29303D",
+          cardBgColor: "#29303D",
+          subtitleColor: "white",
+          titleColorActive: "white",
+          cardSubtitleColor: "white",
+          cardDetailsColor: "white",
+          cardTitleColor: "red",
+        }}
       />
     </section>
   );
