@@ -52,7 +52,6 @@ const Experience = () => {
           },
         ]}
         mode="VERTICAL_ALTERNATING"
-        scrollable={{ scrollbar: true }}
         theme={{
           titleColor: "white",
           primary: "#29303D",

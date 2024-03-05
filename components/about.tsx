@@ -16,7 +16,7 @@ const about = () => {
       id="about"
     >
       <SectionHeading>About me</SectionHeading>
-      <p className="mb-3">
+      <p className="mb-14">
         Final year student of Telecommunication Engineering at Telkom
         University, with 6 months experience in Software Development, Mobile
         Application at Bangkit 2023. My core stack is{" "}
